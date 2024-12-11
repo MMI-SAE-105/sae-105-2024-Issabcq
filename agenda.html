@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Les Ciné-Échos</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo-container">
+            <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="header__logo">
+            <span class="header__logo-text">Les ciné-Échos</span>
+        </div>
+        <nav class="header__nav">
+            <button class="header__menu-button" aria-expanded="false" aria-controls="menu">☰</button>
+            <div id="menu" class="header__menu" aria-hidden="true">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Présentation</a></li>
+                    <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
+                    <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
+                    <li class="header__menu-item"><a href="programmation.html" class="header__menu-link">Programmation</a></li>
+                    <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
+                    <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Agenda Section -->
+        <section class="agenda">
+            <div class="agenda__calendar">
+                <img src="/assets/images/calendrier-juillet-20251.avif" alt="Calendrier juillet 2025" class="agenda__calendar-image">
+            </div>
+
+            <div class="agenda__content">
+                <h1 class="agenda__title">Agenda</h1>
+                <p class="agenda__text">
+                    Rejoignez-nous du 21 au 25 juillet 2025 pour une semaine dédiée au cinéma d'auteur ! Ce festival mettra en lumière des films innovants, des rencontres avec des réalisateurs et des événements spéciaux. Plongez dans l'univers du cinéma et partagez votre passion avec d'autres cinéphiles. Ne manquez pas cette occasion unique de célébrer le septième art !
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo-container">
+                <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="footer__logo">
+                <p class="footer__logo-text">Les ciné-Échos</p>
+            </div>
+            <div class="footer__contact">
+                <p class="footer__location-title">Localisation</p>
+                <p class="footer__location">
+                    Héricourt<br>
+                    Haute-Saône<br>
+                    70400<br>
+                    France
+                </p>
+                <a href="#" class="footer__button">Contactez-nous →</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <a href="#" class="footer__link">Politique de confidentialité</a> | 
+                <a href="#" class="footer__link">Mentions légales</a>
+            </div>
+            <div class="footer__social-media">
+                <p class="footer__social-title">Nous suivre</p>
+                <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Twitter">
+                    <img class="footer__icon" src="/assets/icons/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--facebook" aria-label="Facebook">
+                    <img class="footer__icon" src="/assets/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--instagram" aria-label="Instagram">
+                    <img class="footer__icon" src="/assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--tiktok" aria-label="TikTok">
+                    <img class="footer__icon" src="/assets/icons/tiktok.svg" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmation - Les Ciné-Échos</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="header__logo">
+            <span class="header__logo-text">Les ciné-Échos</span>
+        </div>
+        <nav class="header__nav">
+            <button class="header__menu-button" aria-expanded="false" aria-controls="menu">☰</button>
+            <div id="menu" class="header__menu" aria-hidden="true">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Présentation</a></li>
+                    <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
+                    <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
+                    <li class="header__menu-item"><a href="programmation.html" class="header__menu-link">Programmation</a></li>
+                    <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
+                    <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="program">
+            <div class="program__header">
+                <h1 class="program__title">Programmation</h1>
+                <p class="program__intro">Découvrez la programmation des films projetés pendant le festival.</p>
+            </div>
+
+            <div class="program__list">
+                <article class="program__film">
+                    <img src="/assets/images/parasite.avif" alt="Parasite" class="program__film-image">
+                    <div class="program__film-info">
+                        <h2 class="program__film-title">Parasite</h2>
+                        <p class="program__film-details">Réalisé par Bong Joon-ho</p>
+                        <p class="program__film-description">
+                            Une famille pauvre, les Kim, s'infiltre peu à peu dans la vie d'une famille riche, les Park, en prenant des emplois chez eux sous de fausses identités. 
+                        </p>
+                        <div class="program__film-schedule">
+                            <span class="program__film-time">
+                                <img src="/assets/icons/plein air.svg" alt="Salle 1" class="program__film-screen-icon">
+                                14h00 - Salle 1
+                            </span>
+                            <span class="program__film-time">
+                                <img src="/assets/icons/screen.svg" alt="Salle 2" class="program__film-screen-icon">
+                                20h00 - Salle 2
+                            </span>
+                        </div>
+                        <a href="#" class="program__film-button">En savoir plus</a>
+                    </div>
+                </article>
+
+                <!-- Répétez ce bloc pour chaque film -->
+                <!-- Film 2 -->
+                <article class="program__film">
+                    <img src="/assets/images/lefilsdesaul.avif" alt="Le Fils de Saul" class="program__film-image">
+                    <div class="program__film-info">
+                        <h2 class="program__film-title">Le Fils de Saul</h2>
+                        <p class="program__film-details">Réalisé par László Nemes</p>
+                        <p class="program__film-description">
+                            Le Fils de Saul suit Saul Ausländer, un prisonnier juif hongrois forcé de travailler dans les chambres à gaz d’Auschwitz. 
+                        </p>
+                        <div class="program__film-schedule">
+                            <span class="program__film-time">
+                                <img src="/assets/icons/plein air.svg" alt="Salle 1" class="program__film-screen-icon">
+                                16h00 - Salle 1
+                            </span>
+                        </div>
+                        <a href="#" class="program__film-button">En savoir plus</a>
+                    </div>
+                </article>
+
+                <!-- Film 3 à Film 15 -->
+                <!-- Vous pouvez copier le même format pour chaque film et modifier les contenus et horaires -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo-container">
+                <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="footer__logo">
+                <p class="footer__logo-text">Les ciné-Échos</p>
+            </div>
+            <div class="footer__contact">
+                <p class="footer__location-title">Localisation</p>
+                <p class="footer__location">
+                    Héricourt<br>
+                    Haute-Saône<br>
+                    70400<br>
+                    France
+                </p>
+                <a href="#" class="footer__button">Contactez-nous →</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <a href="#" class="footer__link">Politique de confidentialité</a> | 
+                <a href="#" class="footer__link">Mentions légales</a>
+            </div>
+            <div class="footer__social-media">
+                <p class="footer__social-title">Nous suivre</p>
+                <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Twitter">
+                    <img class="footer__icon" src="/assets/icons/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--facebook" aria-label="Facebook">
+                    <img class="footer__icon" src="/assets/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--instagram" aria-label="Instagram">
+                    <img class="footer__icon" src="/assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--tiktok" aria-label="TikTok">
+                    <img class="footer__icon" src="/assets/icons/tiktok.svg" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+ 

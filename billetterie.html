@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Les Ciné-Échos</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo-container">
+            <img src="/assets/images/logo.svg" alt="Logo Les ciné-Échos" class="header__logo">
+            <span class="header__logo-text">Les ciné-Échos</span>
+        </div>
+        <nav class="header__nav">
+            <button class="header__menu-button" aria-expanded="false" aria-controls="menu">☰</button>
+            <div id="menu" class="header__menu" aria-hidden="true">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Présentation</a></li>
+                    <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
+                    <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
+                    <li class="header__menu-item"><a href="programmation.html" class="header__menu-link">Programmation</a></li>
+                    <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
+                    <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="contact__header">
+                <img src="/assets/images/contact.avif" alt="Contactez-nous" class="contact__image">
+                <h1 class="contact__title">Contactez-nous</h1>
+                <p class="contact__intro">
+                    Si vous avez la moindre question sur le festival
+                </p>
+            </div>
+
+            <form class="contact__form" action="#" method="POST">
+                <div class="contact__form-group">
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" id="email" name="email" class="contact__input" required>
+                </div>
+                <div class="contact__form-group">
+                    <label for="name" class="contact__label">Nom Prénom</label>
+                    <input type="text" id="name" name="name" class="contact__input" required>
+                </div>
+                <div class="contact__form-group">
+                    <label for="question" class="contact__label">Question</label>
+                    <textarea id="question" name="question" class="contact__textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contact__button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo-container">
+                <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="footer__logo">
+                <p class="footer__logo-text">Les ciné-Échos</p>
+            </div>
+            <div class="footer__contact">
+                <p class="footer__location-title">Localisation</p>
+                <p class="footer__location">
+                    Héricourt<br>
+                    Haute-Saône<br>
+                    70400<br>
+                    France
+                </p>
+                <a href="#" class="footer__button">Billetterie →</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <a href="#" class="footer__link">Politique de confidentialité</a> | 
+                <a href="#" class="footer__link">Mentions légales</a>
+            </div>
+            <div class="footer__social-media">
+                <p class="footer__social-title">Nous suivre</p>
+                <a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Twitter">
+                    <img class="footer__icon" src="/assets/icons/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--facebook" aria-label="Facebook">
+                    <img class="footer__icon" src="/assets/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--instagram" aria-label="Instagram">
+                    <img class="footer__icon" src="/assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="footer__social-link footer__social-link--tiktok" aria-label="TikTok">
+                    <img class="footer__icon" src="/assets/icons/tiktok.svg" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
