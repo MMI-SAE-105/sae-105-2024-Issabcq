@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : BACQ 
+- PRÉNOM : Issa
+- GROUPE :A1
+- URL du site : https://cute-longma-f6a096.netlify.app
+- URL FIGMA : https://www.figma.com/design/VYDHIc3pqoIhS2YQh4Tl39/SA%C3%89-103-105?node-id=2-3&t=tdylOexGpztDKEgl-1
 
 ## Sujet
 
