@@ -16,10 +16,10 @@
             <button class="header__menu-button" aria-expanded="false" aria-controls="menu">☰</button>
             <div id="menu" class="header__menu" aria-hidden="true">
                 <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="accueil.html" class="header__menu-link">Accueil</a></li>
                     <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Présentation</a></li>
                     <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
                     <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
-                    <li class="header__menu-item"><a href="programmation.html" class="header__menu-link">Programmation</a></li>
                     <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
                     <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Mentions légales</a></li>
                 </ul>
@@ -27,57 +27,148 @@
         </nav>
     </header>
     <main class="main">
+        <section class="hero">
+            <img src="/assets/images/Salle de ciné.avif" alt="Programmation" class="hero__image">
+        </section>
         <section class="program">
             <div class="program__header">
                 <h1 class="program__title">Programmation</h1>
-                <p class="program__intro">Découvrez la programmation des films projetés pendant le festival.</p>
+                <p class="program__intro">
+                    Les Ciné-Échos vous invitent à découvrir le cinéma d’auteur à travers une programmation variée.
+                </p>
             </div>
-
+            <div class="program__days">
+                <button class="program__day-button">Lundi 21 Juillet</button>
+                <button class="program__day-button">Mardi 22 Juillet</button>
+                <button class="program__day-button">Mercredi 23 Juillet</button>
+                <button class="program__day-button">Jeudi 24 Juillet</button>
+                <button class="program__day-button program__day-button--active">Vendredi 25 Juillet</button>
+            </div>
             <div class="program__list">
                 <article class="program__film">
+                    <p class="program__film-time">10h00 (Château d'Héricourt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
                     <img src="/assets/images/parasite.avif" alt="Parasite" class="program__film-image">
                     <div class="program__film-info">
-                        <h2 class="program__film-title">Parasite</h2>
-                        <p class="program__film-details">Réalisé par Bong Joon-ho</p>
-                        <p class="program__film-description">
-                            Une famille pauvre, les Kim, s'infiltre peu à peu dans la vie d'une famille riche, les Park, en prenant des emplois chez eux sous de fausses identités. 
-                        </p>
-                        <div class="program__film-schedule">
-                            <span class="program__film-time">
-                                <img src="/assets/icons/plein air.svg" alt="Salle 1" class="program__film-screen-icon">
-                                14h00 - Salle 1
-                            </span>
-                            <span class="program__film-time">
-                                <img src="/assets/icons/screen.svg" alt="Salle 2" class="program__film-screen-icon">
-                                20h00 - Salle 2
-                            </span>
-                        </div>
-                        <a href="#" class="program__film-button">En savoir plus</a>
+                        <h2 class="program__film-title">Parasite (2019), réalisé par Bong Joon-ho</h2>
+                        <p class="program__film-description">Une famille pauvre, les Kim, s'infiltre peu à peu dans la vie d'une famille riche, les Park, en prenant des emplois chez eux sous de fausses identités.</p>
                     </div>
                 </article>
-
-                <!-- Répétez ce bloc pour chaque film -->
-                <!-- Film 2 -->
                 <article class="program__film">
+                    <p class="program__film-time">14h30</p>
                     <img src="/assets/images/lefilsdesaul.avif" alt="Le Fils de Saul" class="program__film-image">
                     <div class="program__film-info">
-                        <h2 class="program__film-title">Le Fils de Saul</h2>
-                        <p class="program__film-details">Réalisé par László Nemes</p>
-                        <p class="program__film-description">
-                            Le Fils de Saul suit Saul Ausländer, un prisonnier juif hongrois forcé de travailler dans les chambres à gaz d’Auschwitz. 
-                        </p>
-                        <div class="program__film-schedule">
-                            <span class="program__film-time">
-                                <img src="/assets/icons/plein air.svg" alt="Salle 1" class="program__film-screen-icon">
-                                16h00 - Salle 1
-                            </span>
-                        </div>
-                        <a href="#" class="program__film-button">En savoir plus</a>
+                        <h2 class="program__film-title">Le Fils de Saul (2015), réalisé par László Nemes</h2>
+                        <p class="program__film-description">Le Fils de Saul suit Saul Ausländer, un prisonnier juif hongrois forcé de travailler dans les chambres à gaz d’Auschwitz. </p>
                     </div>
                 </article>
+                <article class="program__film">
+                    <p class="program__film-time">20h30</p>
+                    <img src="/assets/images/amour.avif" alt="Amour" class="program__film-image">
+                    <div class="program__film-info">
+                        <h2 class="program__film-title">Amour (2012), réalisé par Michael Haneke</h2>
+                        <p class="program__film-description">Amour raconte l'histoire de Georges et Anne, un couple d'octogénaires dont la vie bascule lorsqu'Anne subit un accident vasculaire cérébral qui la laisse partiellement paralysée. </p>
+                    </div>
+                </article>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">10h00 (Château d'Héricourt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/Citizen kane.avif" alt="Citizen kane" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Citizen Kane (1941), réalisé par Orseon Welles</h2>
+                    <p class="program__film-description">Citizen Kane raconte l'ascension et la chute de Charles Foster Kane, un magnat de la presse immensément puissant et controversé. </p>
+                </div>
+            </article>
+            </article>
+                <article class="program__film">
+                    <p class="program__film-time">14h30</p>
+                    <img src="/assets/images/vertigo.avif" alt="Vertigo" class="program__film-image">
+                    <div class="program__film-info">
+                        <h2 class="program__film-title">Vertigo (1958), réalisé par Alfred Hitchcock</h2>
+                        <p class="program__film-description">Vertigo suit Scottie Ferguson, un ancien détective souffrant de vertige, engagé pour surveiller Madeleine, la femme mystérieuse d'un ami, qu'il soupçonne d'être en danger. </p>
+                    </div>
+                </article>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">21h30 (Nocturne, plein air) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/city lights.avif" alt="City lights" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">City Lights (1931), réalisé par Charlie Chaplin</h2>
+                    <p class="program__film-description">City Lights raconte l'histoire du Charlot, un vagabond tendre et maladroit, qui tombe amoureux d'une jeune fleuriste aveugle.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">10h00 (Château d'Héricourt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/drive.avif" alt="Drive" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Drive (2011), réalisé par Nicolas Winding REFN</h2>
+                    <p class="program__film-description">Drive suit un mystérieux cascadeur de cinéma, qui travaille également comme chauffeur pour des braqueurs la nuit.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">14h00</p>
+                <img src="/assets/images/the tree of life.avif" alt="The tree of life" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">The Tree of life (2011), réalisé par Terrence Malick</h2>
+                    <p class="program__film-description">"The Tree of Life" est un film réalisé par Terrence Malick, qui explore les thèmes de la vie, de la mort et de la spiritualité à travers les yeux de Jack O'Brien, un homme d'âge moyen.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">20h30</p>
+                <img src="/assets/images/lost in translation.avif" alt="lost in translation" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Lost in translation (2003), réalisé par Sofia Coppola </h2>
+                    <p class="program__film-description">Lost in Translation suit Bob Harris, un acteur américain vieillissant, et Charlotte, une jeune femme perdue, qui se rencontrent dans un hôtel de luxe à Tokyo.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">10h00 (Château d'Héricourt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/blue velvet.avif" alt="Blue Velvet" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Blue velvet (1986), réalisé par David Lynch</h2>
+                    <p class="program__film-description">Blue Velvet suit Jeffrey Beaumont, un étudiant qui découvre une oreille humaine coupée dans un champ de sa ville natale.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">14h30</p>
+                <img src="/assets/images/under the skin.avif" alt="Under the skin" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Under the skin (2013), réalisé par Jonathan Glazer</h2>
+                    <p class="program__film-description">Under the Skin suit une mystérieuse extraterrestre, incarnée par Scarlett Johansson, qui parcourt les routes d'Écosse en séduisant des hommes solitaires pour les attirer dans un piège mortel.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">21h00 (Nocturne en forêt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/Adele.avif" alt="La vie d'Adele" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">La vie d’Adèle : chapitre 1 et 2 (2013), réalisé par Abdellatif Kechiche</h2>
+                    <p class="program__film-description">La Vie d'Adèle : Chapitres 1 et 2  suit Adèle, une lycéenne de 17 ans, qui voit sa vie bouleversée lorsqu'elle rencontre Emma, une artiste aux cheveux bleus.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">10h00 (Château d'Héricourt) <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/The master.avif" alt="The Master" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">The master (2012), réalisé par Paul Thomas Anderson</h2>
+                    <p class="program__film-description">The Master suit Freddie Quell, un vétéran de la marine instable et alcoolique, qui peine à s'adapter à la société d'après-guerre.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">14h30</p>
+                <img src="/assets/images/mulholland drive.avif" alt="mulholland" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Mulholland Drive (2001), réalisé par David Lynch</h2>
+                    <p class="program__film-description">Mulholland Drive suit Betty Elms, une actrice en herbe fraîchement arrivée à Los Angeles, qui rencontre une femme amnésique se faisant appeler Rita après un mystérieux accident de voiture.</p>
+                </div>
+            </article>
+            <article class="program__film">
+                <p class="program__film-time">20h30 Plein air <img class="seance-icon" src="assets/icons/plein air.svg" alt="seance-speciale"></p>
+                <img src="/assets/images/le rubanc blanc.avif" alt="Le Rubanc Blanc" class="program__film-image">
+                <div class="program__film-info">
+                    <h2 class="program__film-title">Le Rubanc blanc (2009), réalisé par Michael Haneke</h2>
+                    <p class="program__film-description">Le Ruban blanc suit la vie d'un petit village protestant du nord de l'Allemagne à la veille de la Première Guerre mondiale. </p>
+                </div>
+            </article>
 
-                <!-- Film 3 à Film 15 -->
-                <!-- Vous pouvez copier le même format pour chaque film et modifier les contenus et horaires -->
             </div>
         </section>
     </main>
@@ -124,4 +215,3 @@
     </footer>
 </body>
 </html>
- 
