@@ -1,0 +1,131 @@
+/* Styles généraux pour le menu */
+.header__nav {
+    position: relative;
+}
+
+.header__menu-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: purple;
+    color: #ffffff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.header__menu[aria-hidden="false"] {
+    transform: translateX(0);
+}
+
+.header__menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header__menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.header__menu-title {
+    font-size: 1.2rem;
+    font-family: 'imbue';
+    color: #ffffff;
+}
+
+.header__menu-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header__menu-list {
+    list-style: none;
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header__menu-item {
+    text-align: left;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'imbue';
+    transition: color 0.2s ease-in-out;
+}
+
+.header__menu-link:hover {
+    color: #f0e130;
+}
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; /* Le menu prend toute la page */
+    background-color: purple;
+    color: #ffffff;
+    transform: translateX(100%); /* Menu caché à droite par défaut */
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.header__menu[aria-hidden="false"] {
+    transform: translateX(0); /* Menu visible */
+}
+
+/* Cache le bouton d'ouverture lorsque le menu est ouvert */
+.header__menu[aria-hidden="false"] ~ .header__menu-button {
+    display: none;
+}
+
+/* Bouton de fermeture */
+.header__menu-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 12;
+    display: block; 
+}
+
+
+

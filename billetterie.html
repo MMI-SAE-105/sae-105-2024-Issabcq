@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billetterie - Les Ciné-Échos</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="src/js/script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="header__logo-container">
-            <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="header__logo">
+            <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos" class="header__logo-image">
             <span class="header__logo-text">Les ciné-Échos</span>
         </div>
         <nav class="header__nav">
-            <button class="header__menu-button" aria-expanded="false" aria-controls="menu">☰</button>
+            <button class="header__menu-button" aria-expanded="false" aria-controls="menu">
+                <img src="/assets/icons/menu2.svg" alt="Menu" class="header__menu-icon">
+            </button>
             <div id="menu" class="header__menu" aria-hidden="true">
+                <div class="header__menu-header">
+                    <div class="header__menu-logo">
+                        <img src="/assets/icons/logo.svg" alt="Logo Les ciné-Échos">
+                        <span class="header__menu-title">Les ciné-Échos</span>
+                    </div>
+                    <button class="header__menu-close">✕</button>
+                </div>
                 <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Présentation</a></li>
-                    <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
-                    <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
+                    <li class="header__menu-item"><a href="index.html" class="header__menu-link">Accueil</a></li>
+                    <li class="header__menu-item"><a href="presentation.html" class="header__menu-link">Le festival</a></li>
                     <li class="header__menu-item"><a href="programmation.html" class="header__menu-link">Programmation</a></li>
-                    <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
-                    <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Mentions légales</a></li>
+                    <li class="header__menu-item"><a href="billetterie.html" class="header__menu-link">Billetterie</a></li>
+                    <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contactez-nous</a></li>
+                    <li class="header__menu-item"><a href="mentions.html" class="header__menu-link">Conditions Générales</a></li>
+                    <li class="header__menu-item"><a href="agenda.html" class="header__menu-link">Agenda</a></li>
                 </ul>
             </div>
         </nav>
