@@ -7,4 +7,5 @@
 @import "/src/css/components/menu.css";
 @import "/src/css/components/footer.css";
 
-@import "/src/css/pages/accueil.css"
+@import "/src/css/pages/accueil.css";
+@import "/src/css/pages/presentation.css";
