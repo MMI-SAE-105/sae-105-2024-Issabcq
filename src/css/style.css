@@ -9,3 +9,8 @@
 
 @import "/src/css/pages/accueil.css";
 @import "/src/css/pages/presentation.css";
+@import "/src/css/pages/programmation.css";
+@import "/src/css/pages/billetterie.css";
+@import "/src/css/pages/contact.css";
+@import "/src/css/pages/mentions.css";
+@import "/src/css/pages/agenda.css";

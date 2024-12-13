@@ -23,9 +23,7 @@ body {
 }
 
 .hero__title {
-    margin-top: 20px;
     font-size: 1.8rem;
-    padding: 0 10px;
     font-family: Imbue;
     
 }
@@ -42,18 +40,24 @@ body {
 }
 
 .section__title {
-    font-size: 1.5rem;
-    color: #4A148C;
-    margin-bottom: 15px;
+    color: var(--Purple, #681EC7);
+    text-align: center;
+    font-family: Imbue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 .section__text {
-    font-size: 1rem;
-    color: #555;
-    margin: 0 auto 20px;
-    padding: 0 10px;
-    max-width: 800px;
-    line-height: 1.8;
+    color: var(--Deep-black, #000);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px; 
+    padding: 20px;
 }
 
 .section__image {

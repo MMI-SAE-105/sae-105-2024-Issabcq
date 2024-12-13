@@ -37,3 +37,35 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     });
 });
+
+
+// Sélectionner tous les boutons des dates
+const dateButtons = document.querySelectorAll('.program__day-button');
+
+// Ajouter un gestionnaire d'événement de clic à chaque bouton
+dateButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Obtenir le texte du bouton (ex: "Lundi 21 Juillet")
+        const dateText = button.textContent.trim();
+
+        // Trouver l'élément correspondant en parcourant les titres des dates
+        const dateSections = document.querySelectorAll('.program__date h2');
+        let targetSection = null;
+
+        dateSections.forEach(section => {
+            if (section.textContent.trim() === dateText) {
+                targetSection = section;
+            }
+        });
+
+        // Si l'élément est trouvé, scroller jusqu'à lui
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth', // Animation fluide
+                block: 'start'      // Positionner en haut de la vue
+            });
+        } else {
+            console.warn(`Aucune section trouvée pour la date : ${dateText}`);
+        }
+    });
+});

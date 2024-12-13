@@ -1,0 +1,174 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-top: 60px;
+}
+
+/* Program Header */
+.program__header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A148C;
+    color: #fff;
+}
+
+.program__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.program__intro {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.program__days {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.program__day-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000;
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.program__day-button:hover {
+    background-color: #d1c4e9;
+}
+
+.program__day-button--active {
+    background-color: #6A1B9A;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Program List */
+.program__list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Film Card */
+.program__film {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+.program__date{
+    color: #000;
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+}
+
+.program__film-time {
+    font-size: 1rem;
+    color: #6A1B9A;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.program__film-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.program__film-info {
+    padding: 10px 15px;
+}
+
+.program__film-title {
+    color: var(--White, #FFF);
+text-align: center;
+
+/* Heading 1 */
+font-family: Imbue;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 120% */
+background-color: var(--purple);
+}
+
+.program__film-description {
+    color: var(--Deep-black, #000);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px; 
+    padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program__list {
+        padding: 10px;
+    }
+
+    .program__film {
+        padding: 10px;
+    }
+
+    .program__film-title {
+        font-size: 1.2rem;
+    }
+
+    .program__film-description {
+        font-size: 0.9rem;
+    }
+
+    .program__day-button {
+        font-size: 0.9rem;
+    }
+}

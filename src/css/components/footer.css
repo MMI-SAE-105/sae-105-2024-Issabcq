@@ -30,8 +30,12 @@
 }
 
 .footer__logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: var(--White, #FFF);
+    font-family: Imbue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
 }
 
 .footer__contact {
@@ -41,14 +45,29 @@
 }
 
 .footer__location-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    color: var(--White, #FFF);
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
 
 .footer__location {
-    line-height: 1.6;
-    font-size: 1rem;
+    color: var(--White, #FFF);
+
+/* Body 2 */
+font-family: Heebo;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 29px; /* 145% */
 }
 
 .footer__button {
@@ -61,6 +80,12 @@
     border-radius: 4px;
     border: 1px solid var(--white);
     transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--Deep-black, #000);
+    font-family: Imbue;
+    font-size: 20.241px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .footer__button:hover {
@@ -84,8 +109,20 @@
 
 .footer__link {
     color: var(--white);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--White, #FFF);
+
+/* Heading 3 */
+font-family: Heebo;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 144.444% */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
 }
 
 .footer__link:hover {
@@ -101,9 +138,20 @@
 }
 
 .footer__social-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    color: var(--White, #FFF);
+
+    /* Heading 3 */
+    font-family: Heebo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
 
 .footer__social-icons {

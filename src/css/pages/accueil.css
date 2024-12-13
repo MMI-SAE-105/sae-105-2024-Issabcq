@@ -27,9 +27,8 @@ main {
 }
 
 .hero__title {
-    margin-top: 20px;
     font-size: 1.8rem;
-    padding: 0 10px; 
+    padding: 20px 10px; 
 }
 
 .description {
@@ -40,10 +39,13 @@ main {
 }
 
 .description__text {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 0 auto;
-    padding: 0 10px;
+    color: var(--Deep-black, #000);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
 }
 
 .features {
@@ -61,11 +63,14 @@ main {
 }
 
 .features__text {
-    font-size: 1rem;
+    color: var(--Deep-black, #000);
     text-align: center;
-    color: #555;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    font-family: Heebo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    padding-bottom: 20px;
 }
 
 .features__button {
@@ -90,9 +95,12 @@ main {
 }
 
 .program__title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    color: #000;
+    font-family: Imbue;
+    font-size: 35.625px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .carousel {
@@ -168,8 +176,15 @@ main {
 }
 
 .partners__title {
-    font-size: 1.5rem;
-    text-align: center;
+    color: var(--Purple, #681EC7);
+text-align: center;
+
+
+    font-family: Imbue;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; 
     margin-bottom: 20px;
 }
 
