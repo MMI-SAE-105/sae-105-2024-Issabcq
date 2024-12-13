@@ -18,7 +18,7 @@ body {
     padding: 1rem 1.5rem;
     color: var(--white);
     position: fixed;
-    width: 100%;
+   
 }
 
 /* Logo Container */
@@ -56,7 +56,6 @@ body {
 .header__menu-icon {
     width: 30px;
     height: 30px;
-    margin-right: 40px;
 }
 /* Header */
 .header {

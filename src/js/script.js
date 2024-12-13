@@ -13,3 +13,27 @@ function toggleMenu() {
 // Écouteurs d'événements
 menuButton.addEventListener('click', toggleMenu); // Ouvrir le menu
 menuCloseButton.addEventListener('click', toggleMenu); // Fermer le menu
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel__track');
+    const items = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel__button--next');
+    const prevButton = document.querySelector('.carousel__button--prev');
+
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+});

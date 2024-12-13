@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
 @import "/src/css/utils/variables.css";
+
+@import "/src/css/base/main.css";
+
 @import "/src/css/components/header.css";
 @import "/src/css/components/menu.css";
 @import "/src/css/components/footer.css";
+
+@import "/src/css/pages/accueil.css"
