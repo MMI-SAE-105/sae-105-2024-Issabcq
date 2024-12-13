@@ -1,4 +1,4 @@
-.hero1 {
+.hero {
     text-align: center;
     color: #fff;
     background-color: #4A148C;
@@ -164,9 +164,7 @@
 
 .partners__title {
     color: var(--Purple, #681EC7);
-text-align: center;
-
-
+    text-align: center;
     font-family: Imbue;
     font-size: 30px;
     font-style: normal;

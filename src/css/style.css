@@ -2,6 +2,7 @@
 @import "/src/css/utils/variables.css";
 
 @import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
 
 @import "/src/css/components/header.css";
 @import "/src/css/components/menu.css";
