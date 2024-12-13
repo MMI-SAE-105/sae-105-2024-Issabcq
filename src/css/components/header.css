@@ -1,0 +1,76 @@
+/* Global Reset */
+body, h1, h2, p, ul, li, a, button, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+}
+
+/* Logo Container */
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__logo-image {
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    font-family: Imbue;
+}
+
+/* Navigation */
+.header__nav {
+    position: relative;
+}
+
+.header__menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+}
+/* Header */
+.header {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    position: fixed; /* Rend le header fixe */
+    top: 0; /* Le positionne en haut */
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la page */
+    z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un meilleur contraste */
+}
+
