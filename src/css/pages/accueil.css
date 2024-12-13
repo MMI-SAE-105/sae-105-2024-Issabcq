@@ -1,17 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
 .hero {
     text-align: center;
     color: #fff;
     background-color: #4A148C;
     width: 100%; 
-    font-family: Imbue;
-    
+    font-family: Imbue; 
 }
 
 .hero__image {
@@ -95,6 +87,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 20px;
 }
 
 .carousel {
